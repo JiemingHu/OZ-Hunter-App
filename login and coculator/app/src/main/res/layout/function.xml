@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logo_kangaroo1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="#8B008B"
+        android:text="OZ-Hunter"
+        android:gravity="center"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#8B008B"
+        android:text="A bridge between Australia and China"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="441px"
+        android:layout_height="550px"
+        app:srcCompat="@drawable/hj_caculator"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="520px"
+        android:layout_height="560px"
+        app:srcCompat="@drawable/hj_agent"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="528px"
+        android:layout_height="529px"
+        app:srcCompat="@drawable/hj_shipping"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="489px"
+        android:layout_height="498px"
+        app:srcCompat="@drawable/hj_discount"
+        android:layout_above="@+id/discount"
+        android:layout_alignRight="@+id/agent"
+        android:layout_alignEnd="@+id/agent" />
+
+    <TextView
+        android:id="@+id/calculator"
+        android:textSize="22dp"
+        android:textColor="#2a2a2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:gravity="center"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/agent"
+        android:textSize="22dp"
+        android:textColor="#2a2a2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agent"
+        android:gravity="center"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/shipping"
+        android:textSize="22dp"
+        android:textColor="#2a2a2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Packege"
+        android:gravity="center"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:textSize="22dp"
+        android:textColor="#2a2a2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discount"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/shipping"
+        android:layout_alignBottom="@+id/shipping"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView8"
+        android:layout_alignStart="@+id/imageView8" />
+
+</RelativeLayout>

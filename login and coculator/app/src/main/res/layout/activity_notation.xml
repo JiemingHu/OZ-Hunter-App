@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="com.example.u5716648.calculator.TriActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Notation Transformation"
+        android:id="@+id/Notation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="31dp"
+        android:textColor="#05a2f7"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#05a2f7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="From"
+        android:id="@+id/From"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Notation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/From"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#05a2f7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="To"
+        android:id="@+id/to"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/Notation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/to"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#05a2f7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Input"
+        android:id="@+id/input"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/Notation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/input"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fc020e"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Output"
+        android:id="@+id/output"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/Notation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="transResult"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/output"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Notation Calculation"
+        android:id="@+id/Calculation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="220dp"
+        android:textSize="31dp"
+        android:textColor="#05a2f7"
+        android:textIsSelectable="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#05a2f7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="First"
+        android:id="@+id/first"
+        android:layout_below="@+id/Calculation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/first"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#05a2f7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Second"
+        android:id="@+id/Second"
+        android:layout_below="@+id/Calculation"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/Second"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AND"
+            android:text="and"
+            android:elegantTextHeight="false"
+            android:textSize="30dp"
+            android:clickable="true"
+            android:onClick="operateAnd"
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/OR"
+            android:text="or"
+            android:textSize="30dp"
+            android:onClick="operateOr"
+           />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/XOR"
+            android:text="XOR"
+            android:textSize="30dp"
+            android:onClick="operateXor"
+        />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NOT"
+            android:text="not"
+            android:textSize="30dp"
+            android:onClick="operateNot"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#05a2f7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+        android:id="@+id/result"
+        android:layout_below="@+id/Calculation"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/result"
+        android:layout_alignRight="@+id/Notation"
+        android:layout_alignEnd="@+id/Notation" />
+
+
+
+
+</RelativeLayout>
+

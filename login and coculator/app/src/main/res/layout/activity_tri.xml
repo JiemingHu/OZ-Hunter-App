@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="com.example.u5716648.calculator.TriActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Trigonometric Function"
+        android:id="@+id/Trigonometric"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="31dp"
+        android:textColor="#05a2f7"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        android:id="@+id/input"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/Trigonometric"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/input"
+        android:layout_alignRight="@+id/Trigonometric"
+        android:layout_alignEnd="@+id/Trigonometric" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sin"
+        android:id="@+id/sin"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/Trigonometric"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnSin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/sin"
+        android:layout_alignRight="@+id/Trigonometric"
+        android:layout_alignEnd="@+id/Trigonometric" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cos"
+        android:id="@+id/cos"
+        android:layout_marginTop="163dp"
+        android:layout_below="@+id/Trigonometric"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnCos" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/cos"
+        android:layout_alignRight="@+id/Trigonometric"
+        android:layout_alignEnd="@+id/Trigonometric" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tan"
+        android:id="@+id/tan"
+        android:layout_marginTop="223dp"
+        android:layout_below="@+id/Trigonometric"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnTan" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/tan"
+        android:layout_alignRight="@+id/Trigonometric"
+        android:layout_alignEnd="@+id/Trigonometric" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cot"
+        android:id="@+id/ctan"
+        android:layout_marginTop="283dp"
+        android:layout_below="@+id/Trigonometric"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnCtan" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:ems="10"
+        android:background="#fcf9f9"
+        android:layout_alignBottom="@+id/ctan"
+        android:layout_alignRight="@+id/Trigonometric"
+        android:layout_alignEnd="@+id/Trigonometric" />
+
+</RelativeLayout>

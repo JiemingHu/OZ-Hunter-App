@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jieminghu.ozhunter.Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/logo_circle"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="79dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        tools:layout_editor_absoluteY="273dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:padding="20dp"
+        android:textSize="18dp"
+        android:textColor="#2a2a2a"
+        android:layout_marginTop="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:textColor="#2a2a2a"
+        android:hint="Password"
+        tools:layout_editor_absoluteY="273dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:padding="20dp"
+        android:layout_below="@+id/username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logo_kangaroo1" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_yellow"
+        android:text="Log In"
+        android:textSize="22dp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/hj_silver"
+        android:text="Register"
+        android:textSize="22dp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_below="@+id/loginbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+</RelativeLayout>
